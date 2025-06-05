@@ -129,9 +129,12 @@ class stack{
             for(int i=0;i<size;i++){
                 newArr[i] = arr[i];
             }
+            for(int i=szie;i<newSize;i++){
+                newArray[i] = 0;
+            }
+            delete[] arr;
             arr = newArr;
             size = newSize;
-            delete[] newArr;
         }
 };
 //reverse the stack order using temporary stack 
